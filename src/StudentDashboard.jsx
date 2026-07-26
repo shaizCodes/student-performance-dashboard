@@ -52,7 +52,7 @@ export default function StudentDashboard({students: studentList}) {
     const targetRoll = parseInt(searchRollNo, 10);
     
     // TODO: Use students.find() to get the student object matching targetRoll
-    const result = null; // Replace this line
+    const result = students.find((student) => student["Roll No."] === targetRoll);
     if(!result){
       alert("Student not found!");
     }
@@ -62,7 +62,7 @@ export default function StudentDashboard({students: studentList}) {
   // Task 3b: Find Last 'A' Student (findLast)
   const handleFindLastAStudent = () => {
     // TODO: Use students.findLast() to find the last student with Grade === "A"
-    const lastA = null; // Replace this line 
+    const lastA = students.findLast((student) => student.Grade === "A"); 
     if(!lastA){
         alert("Student not found!");
     }
