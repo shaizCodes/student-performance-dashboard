@@ -34,9 +34,9 @@ export default function StudentDashboard({students: studentList}) {
   const handleLogDirectory = () => {
     console.clear();
     console.log("=== STUDENT DIRECTORY ===");
-    // TODO: Use students.forEach() to log each student's name and roll number 
-    // Format: "<Student_Names> - Roll No: <Roll No.>"
-    // Example: Donald Contreras - Roll No: 524613
+    students.forEach((student) => {
+      console.log(`${student.Student_Names} - Roll No: ${student["Roll No."]}`);
+    });
   };
 
   // Task 2: Filter by Grade (filter)
