@@ -43,7 +43,7 @@ export default function StudentDashboard({students: studentList}) {
   const getFilteredStudents = () => {
     if (selectedGrade === 'All') return students;
     // TODO: Use students.filter() to return students matching selectedGrade
-    return students; // Replace this line
+    return students.filter((student) => student.Grade === selectedGrade);
   };
 
   // Task 3a: Search Student by Roll No (find)
