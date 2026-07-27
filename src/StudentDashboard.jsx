@@ -131,7 +131,7 @@ export default function StudentDashboard({students: studentList}) {
   // Task 7c: Class Analytics (reduce)
   const getTotalAGrades = () => {
     // TODO: Use students.reduce() to count total number of students with Grade === "A"
-    return students.reduce((count, student) => (student.Grade === "A" ? count + 1 : count), 0; 
+    return students.reduce((count, student) => (student.Grade === "A" ? count + 1 : count), 0); 
   };
 
   // Task 8: Honor Roll Top 3 Preview (slice)
